@@ -17,7 +17,7 @@ mongoose.connect(config.DB).then(
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 8080;
 
 app.use('/coins', coinRoutes);
 
