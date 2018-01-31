@@ -21,6 +21,6 @@ const port = process.env.PORT || 8080;
 
 app.use('/coins', coinRoutes);
 
-const server = app.listen(port, function(){
+const server = app.listen(process.env.PORT || 8080,()=>{
   console.log('Listening on port ' + port);
 });
